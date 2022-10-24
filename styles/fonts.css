@@ -1,0 +1,15 @@
+@font-face {
+  font-family: Gilroy;
+  src: url("/fonts/regular.woff");
+  font-weight: 400;
+}
+@font-face {
+  font-family: Gilroy;
+  src: url("/fonts/medium.woff");
+  font-weight: 500;
+}
+@font-face {
+  font-family: Gilroy;
+  src: url("/fonts/simibold.woff");
+  font-weight: 600;
+}
