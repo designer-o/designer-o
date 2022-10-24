@@ -24,3 +24,11 @@ body {
     font-family: "Gilroy", system-ui, sans-serif;
   }
 }
+
+.scaleHover {
+  transition: 0.1s ease-in-out;
+}
+
+.scaleHover:hover {
+  transform: scale(1.1);
+}

@@ -17,18 +17,25 @@ const Skills = () => {
 
 export default Skills;
 
-const Skill = ({ title, exp }) => {
+type propsTypes = {
+  title: String;
+  exp: Number;
+};
+
+const Skill = (props: propsTypes) => {
   return (
     <div className="flex gap-4 w-full items-center">
       <div className="relative aspect-square w-1/4 rounded-lg overflow-hidden bg-black">
         {/* <Image src={"/photo.png"} layout="fill" objectFit="cover" /> */}
       </div>
       <div className="flex flex-col w-full">
-        <p className="text-2xl font-medium mb-4 leading-normal">{title}</p>
+        <p className="text-2xl font-medium mb-4 leading-normal">
+          {props.title}
+        </p>
         <div className="bg-black/10 w-full h-2 rounded-full">
           <div
             className="bg-black h-2 rounded-full"
-            style={{ width: exp + "%" }}
+            style={{ width: props.exp + "%" }}
           ></div>
         </div>
       </div>
