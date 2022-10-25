@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const Skills = () => {
   return (
@@ -6,9 +7,9 @@ const Skills = () => {
       <h2 className="text-6xl sm:text-7xl 2xl:text-8xl font-semibold leading-tight mb-16">
         my skills
       </h2>
-      <div className="grid grid-col-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 items-center">
+      <div className="grid grid-col-1 sm:grid-cols-2 lg:grid-cols-3 gap-14   items-center">
         {skillData.map((i) => (
-          <Skill key={i.title} title={i.title} exp={i.exp} />
+          <Skill key={i.title} title={i.title} exp={i.exp} icon={i.icon} />
         ))}
       </div>
     </div>
@@ -20,14 +21,14 @@ export default Skills;
 type propsTypes = {
   title: String;
   exp: Number;
+  icon: String;
 };
 
 const Skill = (props: propsTypes) => {
   return (
-    <div className="flex gap-4 w-full items-center">
-      <div className="relative aspect-square w-1/4 rounded-lg overflow-hidden bg-black">
-        {/* <Image src={"/photo.png"} layout="fill" objectFit="cover" /> */}
-      </div>
+    <div className="flex gap-8 w-full items-center">
+      <Image src={`${props.icon}`} height={70} width={70} objectFit="contain" />
+
       <div className="flex flex-col w-full">
         <p className="text-2xl font-medium mb-4 leading-normal">
           {props.title}
@@ -47,51 +48,51 @@ const skillData = [
   {
     title: "Figma",
     exp: 90,
-    icon: "",
+    icon: "/icons/figma.svg",
   },
   {
     title: "Photoshop",
     exp: 60,
-    icon: "",
+    icon: "/icons/adobe-photoshop.svg",
   },
   {
     title: "Illustrator",
     exp: 60,
-    icon: "",
+    icon: "/icons/adobe-illustrator.svg",
   },
   {
     title: "HTML 5",
     exp: 90,
-    icon: "",
+    icon: "/icons/html.svg",
   },
   {
     title: "CSS 3",
     exp: 95,
-    icon: "",
+    icon: "/icons/css3.svg",
   },
   {
     title: "Bootstrap 5",
     exp: 95,
-    icon: "",
+    icon: "/icons/bootstrap_logo.svg",
   },
   {
     title: "Tailwind CSS",
     exp: 95,
-    icon: "",
+    icon: "/icons/tailwind_css_logo.svg",
   },
   {
     title: "Javascript",
     exp: 75,
-    icon: "",
+    icon: "/icons/javascript.svg",
   },
   {
     title: "React",
     exp: 83,
-    icon: "",
+    icon: "/icons/react.svg",
   },
   {
     title: "Next js",
     exp: 86,
-    icon: "",
+    icon: "/icons/nextjs-logo.svg",
   },
 ];

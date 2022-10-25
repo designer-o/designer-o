@@ -2,7 +2,10 @@ import React from "react";
 import Image from "next/image";
 const About = () => {
   return (
-    <div className="grid grid-col-1 lg:grid-cols-2 min-h-screen items-center py-10 sm-py-0">
+    <div
+      className="grid grid-col-1 lg:grid-cols-2 min-h-screen items-center py-10 sm-py-0"
+      id="about"
+    >
       <div className="lg:max-w-[80%]">
         <h2 className="text-6xl sm:text-7xl 2xl:text-8xl font-semibold leading-tight mb-6">
           about me

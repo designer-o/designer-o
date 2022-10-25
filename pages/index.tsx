@@ -9,6 +9,7 @@ import Hero from "../components/Hero";
 import About from "../components/About";
 import Work from "../components/Work";
 import Skills from "../components/Skills";
+import Cta from "../components/Cta";
 
 const Home: NextPage<
   InferGetServerSidePropsType<typeof getServerSideProps>
@@ -27,6 +28,7 @@ const Home: NextPage<
       <About />
       <Skills />
       <Work data={data} />
+      <Cta />
     </div>
   );
 };

@@ -17,13 +17,13 @@ const Hero = () => {
       </p>
       <div className="flex gap-3">
         <a
-          href="#"
+          href="#work"
           className="px-10 rounded-full py-5 inline-block bg-black text-white font-medium text-2xl"
         >
           see my work
         </a>
         <a
-          href="#"
+          href="#about"
           className="px-10 rounded-full py-5 inline-block text-black font-medium text-2xl"
         >
           about me
