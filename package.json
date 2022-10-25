@@ -6,6 +6,8 @@
     "start": "next start"
   },
   "dependencies": {
+    "@splinetool/react-spline": "^2.2.3",
+    "@splinetool/runtime": "^0.9.130",
     "next": "latest",
     "react": "18.1.0",
     "react-dom": "18.1.0"

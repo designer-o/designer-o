@@ -1,8 +1,9 @@
 import React from "react";
+import Animation from "./Animation";
 
 const Hero = () => {
   return (
-    <div className="flex flex-col items-start flex-grow justify-center">
+    <div className="flex flex-col items-start flex-grow justify-center relative">
       <p className="text-2xl font-medium">I ❤️ to</p>
       <h1 className="text-6xl sm:text-7xl 2xl:text-8xl font-semibold leading-tight mb-6">
         design
@@ -29,6 +30,7 @@ const Hero = () => {
           about me
         </a>
       </div>
+      <Animation />
     </div>
   );
 };
