@@ -8,9 +8,12 @@
   "dependencies": {
     "@splinetool/react-spline": "^2.2.3",
     "@splinetool/runtime": "^0.9.130",
+    "gsap": "^3.11.3",
     "next": "latest",
     "react": "18.1.0",
-    "react-dom": "18.1.0"
+    "react-creative-cursor": "^1.2.7",
+    "react-dom": "18.1.0",
+    "sass": "^1.56.0"
   },
   "devDependencies": {
     "@types/node": "17.0.35",

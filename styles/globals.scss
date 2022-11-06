@@ -2,7 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("./fonts.css");
+@import "fonts";
+@import "mouse-follower/src/scss/index.scss";
 
 @layer base {
   html {
@@ -27,5 +28,16 @@
 
   .scaleHover:hover {
     transform: scale(1.1);
+  }
+  ::-moz-selection {
+    /* Code for Firefox */
+    @apply text-white bg-black;
+  }
+
+  ::selection {
+    @apply text-white bg-black;
+  }
+  .c-cursor {
+    @apply bg-white mix-blend-difference;
   }
 }

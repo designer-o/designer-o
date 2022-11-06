@@ -38,7 +38,7 @@ const Card = (props: cardType) => {
     <a
       href={`${props.url}`}
       target="_blank"
-      className="flex flex-col w-full p-4 rounded-2xl"
+      className="flex flex-col w-full p-4 rounded-2xl para"
     >
       <div
         className="rounded-xl w-full relative overflow-hidden"
