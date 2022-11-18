@@ -34,9 +34,11 @@
   }
 
   ::selection {
-    @apply text-white bg-black;
-  }
-  .c-cursor {
-    @apply bg-white mix-blend-difference;
+    @apply text-black bg-[#51FFA1];
   }
 }
+
+  .c-cursor {
+    background: #fff !important;
+    mix-blend-mode: difference !important;
+  }

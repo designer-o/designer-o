@@ -7,7 +7,11 @@ const About = () => {
       id="about"
     >
       <div className="lg:max-w-[80%]">
-        <h2 className="text-6xl sm:text-7xl 2xl:text-8xl font-semibold leading-tight mb-6">
+        <h2
+          data-cursor-magnetic
+          data-cursor-size="180px"
+          className="text-6xl sm:text-7xl 2xl:text-8xl font-semibold leading-tight mb-6"
+        >
           about me
         </h2>
         <p className="text-xl lg:text-2xl font-medium mb-8 leading-normal">

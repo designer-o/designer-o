@@ -8,7 +8,7 @@ const Button = ({ text, href }: { text: String; href: string }) => {
     <>
       <button
         data-cursor-magnetic
-        data-cursor-size="80px"
+        data-cursor-size="180px"
         onClick={() => router.push(encodeURI(href), href, { scroll: false })}
         className="px-10 rounded-full py-5 inline-block bg-black text-white font-medium text-2xl"
       >

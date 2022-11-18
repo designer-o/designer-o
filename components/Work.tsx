@@ -1,13 +1,18 @@
 import React from "react";
 import Image from "next/image";
+import Button from "./Button";
 
 const Work = ({ data }: { data: any }) => {
   return (
     <div
-      className="min-h-screen flex flex-col py-10 sm-py-0 justify-center"
+      className="min-h-screen flex flex-col py-10 sm-py-0 items-center"
       id="work"
     >
-      <h2 className="text-6xl sm:text-7xl 2xl:text-8xl font-semibold leading-tight mb-16">
+      <h2
+        data-cursor-magnetic
+        data-cursor-size="180px"
+        className="text-6xl self-start sm:text-7xl 2xl:text-8xl font-semibold leading-tight mb-16"
+      >
         recent work
       </h2>
       <div className="grid grid-col-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 items-center">
@@ -15,13 +20,10 @@ const Work = ({ data }: { data: any }) => {
           <Card key={i.id} src={i.images.hidpi} url={i.html_url} />
         ))}
       </div>
-      <a
-        href="https://dribbble.com/crazy4designs"
-        target="_blank"
-        className="px-10 rounded-full py-5 inline-block bg-black text-white font-medium text-2xl mt-10 text-center mx-auto"
-      >
-        see all work
-      </a>
+      <Button
+        text={"see all work"}
+        href={"https://dribbble.com/crazy4designs"}
+      />
     </div>
   );
 };
@@ -47,7 +49,8 @@ const Card = (props: cardType) => {
         <Image
           className="scaleHover"
           src={`${props.src}`}
-          layout="fill"
+          width={445}
+          height={334}
           objectFit="cover"
         />
       </div>

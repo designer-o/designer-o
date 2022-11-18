@@ -14,16 +14,12 @@ import Cta from "../components/Cta";
 import { Cursor } from "react-creative-cursor";
 import "react-creative-cursor/dist/styles.css";
 
-import gsap from "gsap";
-import ScrollTrigger from "gsap/dist/ScrollTrigger";
-import { useLayoutEffect } from "react";
-
 const Home: NextPage<
   InferGetServerSidePropsType<typeof getServerSideProps>
 > = ({ data }) => {
   return (
     <div className="container mx-auto px-5 sm:px-10">
-      <Cursor isGelly={true} />
+      <Cursor isGelly={true} cursorSize={20} />
       <Head>
         <title>designer_o | figma expert ui ux designer</title>
         <link rel="icon" href="/favicon.ico" />
